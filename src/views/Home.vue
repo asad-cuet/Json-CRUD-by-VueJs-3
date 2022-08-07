@@ -4,7 +4,7 @@
 
 
    <li v-for="project in projects" :key="project.id" class="list-group-item">
-      <SingleProject :project="project" @delete="handleDelete"/>
+      <SingleProject :project="project" @delete="handleDelete" @complete="handleComplete"/>
    </li>
 
    
@@ -35,9 +35,15 @@ export default {
   },
   methods: {
     handleDelete(id) {
-      this.projects=this.projects.filter((project)=> {
+      this.projects=this.projects.filter(project=> {
        return project.id !==id;
       });
+    },
+    handleComplete(id) {
+      let p=this.projects.find(project=> {
+          return project.id === id
+      });
+      p.complete=!p.complete
     }
   }
 }

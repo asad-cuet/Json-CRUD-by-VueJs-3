@@ -1,6 +1,8 @@
 <template>
-<Navbar/>
-  <router-view/>
+    <Navbar/>
+    <keep-alive>
+       <router-view/>
+    </keep-alive>
 </template>
 
 <script>
@@ -8,12 +10,12 @@ import Navbar from '@/views/Navbar.vue'
 export default {
 
     components: {
-    Navbar,
     Navbar
+    }
 }
 
 
-}
+
 </script>
 <style>
 #app {
