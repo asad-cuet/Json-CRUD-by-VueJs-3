@@ -1,8 +1,6 @@
 <template>
-    <Navbar/>
-    <keep-alive>
+       <Navbar/>
        <router-view/>
-    </keep-alive>
 </template>
 
 <script>

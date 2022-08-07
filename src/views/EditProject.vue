@@ -9,7 +9,7 @@
     <label for="exampleFormControlTextarea1" class="form-label">Details</label>
     <textarea v-model="details" class="form-control" rows="3"></textarea>
   </div>
-  <button type="submit" class="btn">Edit Project</button>
+  <button type="submit" class="btn">Update Project</button>
   </form>
 
   </div>

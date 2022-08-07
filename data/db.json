@@ -2,9 +2,9 @@
   "projects": [
     {
       "id": 1,
-      "title": "asad",
-      "details": "My name is asad",
-      "complete": false
+      "title": "Asadul Islam",
+      "details": "My name is Asadul Islam",
+      "complete": true
     },
     {
       "id": 3,
@@ -51,7 +51,7 @@
     {
       "title": "Tisha Ahmed",
       "details": "Asadul Islam loves Tisha Ahmed",
-      "complete": false,
+      "complete": true,
       "id": 10
     }
   ]
